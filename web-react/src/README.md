@@ -1,57 +1,60 @@
-# Jallen
+# Jallen Portfolio
 
-The Official Page of Jallen created using React
+Modern portfolio website built with React 19, TypeScript, and Tailwind CSS.
+
+## Tech Stack
+
+- **React 19** - Latest React with modern features
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations
+- **Radix UI** - Accessible component primitives
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```
 
 ## Members
 
 Listed below are the contributors for this project.
 
-* James Allen Tadique
-* Genessa Nepomuceno Tadique
+- James Allen Tadique
+- Genessa Nepomuceno Tadique
 
-# Project Rules
+## Development
 
-Contributors need to follow listed rules to ensure a more clean and readable project.
+### Scripts
 
-## Branching
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
-The branch names is essential and important in project development. Branch name represents on what section the contributors are working on.
+### Project Structure
 
-### Branch Development
+```
+src/
+├── components/     # React components
+├── hooks/         # Custom hooks
+├── types/         # TypeScript interfaces
+└── lib/           # Utilities
+```
 
-Branch naming for development is labeled by **lastname-dev**. This will represent who is the contributor for the development. **(Ex. tadique-dev)**
+### Code Standards
 
-### Branch Issue
-
-Branch naming for issues are labeled by **issue_id** This will represent the fixed or patch for the issue to be resolved. **(Ex. TTA1)**
-
-### Issues
-
-Issues are either bugs, enhancements or development for the project. Always make an appropriate title that best describes the issue.
-
-Steps:
-* Create a new issue.
-* Make a approriate title for the issue
-* Assign it to the developer.
-* Assign appropriate milestone and label for the merge request.
-* Submit the issue.
-
-### Merge Request
-
-Merge request is the act of merging branches for deployment.
-
-Steps:
-* Create a merge request.
-* Make a approriate title for the merge request. Make sure to put **WIP:** before the title to let us know that it is still in progress.
-* Assign it to the code reviewers.
-* Assign appropriate milestone and label for the merge request. It should be the same milestone and label for the issue.
-* Untick **Delete source branch when merge request is accepted.** in the Merge Options.
-* Submit the merge request.
+- TypeScript interfaces for all component props
+- Semantic HTML and accessibility best practices
+- Tailwind CSS for styling
+- ESLint for code quality
 
 # Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+email, or any other method with the owners of this repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
@@ -71,21 +74,21 @@ orientation.
 Examples of behavior that contributes to creating a positive environment
 include:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive criticism
+- Focusing on what is best for the community
+- Showing empathy towards other community members
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
+- The use of sexualized language or imagery and unwelcome sexual attention or
+  advances
+- Trolling, insulting/derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or electronic
   address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
+- Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
 ### Our Responsibilities
@@ -130,20 +133,8 @@ available at [http://contributor-covenant.org/version/1/4][version]
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
 
-# License
+## License
 
-Copyright (c) 2020-present TeamAei
+Copyright (c) 2020-present James Allen Tadique
 
-This software are licensed as follows:
-
-* It is for exclusive use only for TeamAei. 
-* All of the files inside are confidential.
-* It is not intended for distribution and should not be sold.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Personal portfolio project. All rights reserved.

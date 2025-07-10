@@ -10,7 +10,6 @@ All notable changes to this project will be documented in this file.
 
 # 1.2.0 Fixes
 
-
 - `[Main]` Fixed a bug on main section not occupying whole content when footer is hidden.
 - `[Main]` Added loading animation.
 - `[Projects]` Added loading animation.
@@ -40,4 +39,3 @@ All notable changes to this project will be documented in this file.
 - `[Footer]` Added footer component.
 - `[Main]` Added main component.
 - `[Navigation]` Added navigation component.
-
