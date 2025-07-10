@@ -21,6 +21,7 @@ import type {
 import { useEffect, useState } from "react";
 import { getInformations } from "../../../../shared/api/information";
 import { getAbouts } from "../../../../shared/api/about";
+import { getDynamoAbouts } from "../../../../shared/dynamo/services/aboutService";
 import { getExperiences } from "../../../../shared/api/experience";
 import { getSkillsWithIcons } from "../../../../shared/api/skills";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -44,6 +45,7 @@ const Resume = () => {
   useEffect(() => {
     getInformationData();
     getAboutData();
+    getAboutDataDynamo();
     getExperienceData();
     getSkills();
   }, []);
@@ -60,6 +62,18 @@ const Resume = () => {
     const abouts: About[] = await getAbouts();
     setAbout(abouts);
     setAboutLoading(false);
+  };
+
+  const getAboutDataDynamo = async () => {
+    const fetchAbouts = async () => {
+      try {
+        const data = await getDynamoAbouts();
+      } catch (error) {
+        console.error("Error fetching abouts:", error);
+      }
+    };
+
+    fetchAbouts();
   };
 
   const getExperienceData = async () => {
