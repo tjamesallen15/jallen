@@ -1,0 +1,20 @@
+{
+  "name": "jallen",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "web-react",
+    "web-vue",
+    "shared"
+  ],
+  "scripts": {
+    "dev:react": "npm run dev --workspace=web-react",
+    "dev:vue": "npm run dev --workspace=web-vue",
+    "build:react": "npm run build --workspace=web-react",
+    "build:vue": "npm run build --workspace=web-vue",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
