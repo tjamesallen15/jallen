@@ -10,12 +10,12 @@ import Socials from "./socials/Socials";
 import { motion } from "framer-motion";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import type { Dashboard } from "../../../shared/common/page";
+import type { Dashboard as DashboardType } from "../../../shared/common/page";
 
 const Dashboard = () => {
   const [skills, setSkills] = useState<Skills[]>();
   const [isLoading, setLoading] = useState(true);
-  const data: Dashboard = getHomeDashboard();
+  const data: DashboardType = getHomeDashboard();
 
   useEffect(() => {
     getSkillData();
