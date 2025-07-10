@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import "./index.css";
-import Dashboard from "./components/Dashboard.tsx";
+import type Dashboard from "./components/Dashboard.tsx";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Resume from "./components/pages/Resume";
