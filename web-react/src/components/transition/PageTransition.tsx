@@ -1,5 +1,6 @@
-import React, { ReactNode } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import React from "react";
+import type { ReactNode } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 type PageTransitionProps = {
   children: ReactNode;
@@ -11,22 +12,20 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
       <div key={window.location.pathname}>
         <motion.div
           initial={{ opacity: 1 }}
-          animate={{ 
+          animate={{
             opacity: 0,
             transition: {
               delay: 1,
               duration: 0.4,
-              ease: 'easeInOut'
-            }
+              ease: "easeInOut",
+            },
           }}
-          className='h-screen w-screen fixed bg-primary top-0 pointer-events-none'
-        >
-
-        </motion.div>
+          className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
+        ></motion.div>
       </div>
       {children}
     </AnimatePresence>
-  )
-}
+  );
+};
 
 export default PageTransition;
