@@ -3,7 +3,7 @@ import { getServerData } from "./gateway";
 import { getSkillIcon } from "../common/core-base";
 
 export const getSkills = async (): Promise<Skills[]> => {
-  const data: Skills[] = await getServerData("skills");
+  const data: Skills[] = await getServerData("skill");
   return data;
 };
 

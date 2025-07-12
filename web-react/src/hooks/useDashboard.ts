@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getSkills } from "../../../shared/api/skills";
+import { getSkills } from "../../../shared/api/skill";
 import type { Skills } from "../../../shared/common/model";
 import { getHomeDashboard } from "../../../shared/common/core-base";
 import type { Dashboard as DashboardType } from "../../../shared/common/page";
@@ -15,7 +15,7 @@ export const useDashboard = () => {
         const data: Skills[] = await getSkills();
         setSkills(data);
       } catch (error) {
-        console.error('Failed to fetch skills:', error);
+        console.error("Failed to fetch skills:", error);
       } finally {
         setLoading(false);
       }

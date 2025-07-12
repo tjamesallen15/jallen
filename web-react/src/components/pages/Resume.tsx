@@ -22,7 +22,7 @@ import { useEffect, useState } from "react";
 import { getInformations } from "../../../../shared/api/information";
 import { getAbouts } from "../../../../shared/api/about";
 import { getExperiences } from "../../../../shared/api/experience";
-import { getSkillsWithIcons } from "../../../../shared/api/skills";
+import { getSkillsWithIcons } from "../../../../shared/api/skill";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";

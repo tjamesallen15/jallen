@@ -1,6 +1,19 @@
-# What's New with Jallen-React
+# What's New with Web-React
 
 All notable changes to this project will be documented in this file.
+
+# 1.3.0
+
+# 1.3.0 Features
+
+- `[Dependencies]` Updated React to v19.
+- `[Dependencies]` Updated Tailwind CSS to v4.
+- `[Dependencies]` Updated Vite to v7.
+
+# 1.3.0 Fixes
+
+- `[Dependencies]` Updated all dependencies to latest versions.
+- `[Build]` Improved build performance with latest tooling.
 
 # 1.2.0
 
