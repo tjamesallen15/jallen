@@ -31,8 +31,8 @@ const Header = () => {
               onChange={onHandleChange}
             >
               <option value="react">React</option>
-              {/* <option value="next">Next.js</option>
-              <option value="vue">Vue.js</option> */}
+              <option value="next">Next.js</option>
+              <option value="vue">Vue.js</option>
             </select>
           </div>
         </div>
