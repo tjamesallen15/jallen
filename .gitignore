@@ -11,6 +11,12 @@ dist/
 build/
 *.tsbuildinfo
 
+# Next.js
+.next/
+out/
+.vercel
+.turbo
+
 # Environment variables
 .env
 .env.local

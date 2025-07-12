@@ -5,13 +5,16 @@
   "workspaces": [
     "web-react",
     "web-vue",
+    "web-next",
     "shared"
   ],
   "scripts": {
     "dev:react": "npm run dev --workspace=web-react",
     "dev:vue": "npm run dev --workspace=web-vue",
+    "dev:next": "npm run dev --workspace=web-next",
     "build:react": "npm run build --workspace=web-react",
     "build:vue": "npm run build --workspace=web-vue",
+    "build:next": "npm run build --workspace=web-next",
     "install:all": "npm install"
   },
   "devDependencies": {
