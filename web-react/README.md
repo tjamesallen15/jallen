@@ -1,6 +1,6 @@
 # Web-React
 
-Modern portfolio website built with React 19, TypeScript, and Tailwind CSS 4, featuring responsive design and smooth animations.
+This modern portfolio website leverages React 19's latest features, TypeScript for type safety, and Tailwind CSS 4's utility-first styling to create a cutting-edge web application. It features fully responsive design that adapts seamlessly across all devices, enhanced with smooth animations and transitions powered by Framer Motion for an engaging user experience.
 
 ## Tech Stack
 
