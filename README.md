@@ -1,6 +1,6 @@
 # Jallen Portfolio
 
-Modern portfolio website showcasing James Allen Tadique's work and skills.
+This modern portfolio website leverages React 19's latest features, TypeScript for type safety, and Tailwind CSS 4's utility-first styling to create a cutting-edge web application. It features fully responsive design that adapts seamlessly across all devices, enhanced with smooth animations and transitions powered by Framer Motion for an engaging user experience.
 
 ## Projects
 
