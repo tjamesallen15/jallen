@@ -10,17 +10,30 @@ Modern React portfolio built with TypeScript, Vite, and Tailwind CSS.
 
 **Tech Stack:**
 
-- React 19 + TypeScript
-- Vite build tool
-- Tailwind CSS + Framer Motion
-- Radix UI components
+- **React 19** - Latest React with modern features
+- **TypeScript** - Type-safe development
+- **Vite 7** - Fast build tool and dev server
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations and transitions
+- **Radix UI** - Accessible component primitives
+- **Redux Toolkit** - State management
+- **React Router** - Client-side routing
 
-**Quick Start:**
+## Quick Start
 
 ```bash
+# Clone the repository
+git clone <repository-url>
 cd web-react
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
 ## Contributors

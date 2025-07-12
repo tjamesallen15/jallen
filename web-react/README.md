@@ -1,55 +1,110 @@
-# Jallen Portfolio
+# Web-React
 
-Modern portfolio website built with React 19, TypeScript, and Tailwind CSS.
+Modern portfolio website built with React 19, TypeScript, and Tailwind CSS 4, featuring responsive design and smooth animations.
 
 ## Tech Stack
 
 - **React 19** - Latest React with modern features
 - **TypeScript** - Type-safe development
-- **Vite** - Fast build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Smooth animations
+- **Vite 7** - Fast build tool and dev server
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations and transitions
 - **Radix UI** - Accessible component primitives
+- **Redux Toolkit** - State management
+- **React Router** - Client-side routing
+
+## Features
+
+- Responsive portfolio design
+- Smooth animations and transitions
+- Dynamic content loading
+- Mobile-first approach
+- Accessible UI components
+- Modern React patterns
+- Type-safe development
 
 ## Quick Start
 
 ```bash
+# Clone the repository
+git clone <repository-url>
+cd web-react
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
+
+## API Documentation
+
+Once running, access:
+
+- Application: `http://localhost:5173`
+- Development server with hot reload
 
 ## Members
 
 Listed below are the contributors for this project.
 
 - James Allen Tadique
-- Genessa Nepomuceno Tadique
+- Genessa Nepomuceno-Tadique
+
+# Project Rules
+
+Contributors need to follow listed rules to ensure a more clean and readable project.
+
+## Branching
+
+The branch names is essential and important in project development. Branch name represents on what section the contributors are working on.
+
+### Branch Development
+
+Branch naming for development is labeled by **lastname-dev**. This will represent who is the contributor for the development. **(Ex. doe-dev)**
+
+### Branch Issue
+
+Branch naming for issues are labeled by **issue_id** This will represent the fixed or patch for the issue to be resolved. **(Ex. 1 - Blocker on Dashboard)**
+
+### Issues
+
+Issues are either bugs, enhancements or development for the project. Always make an appropriate title that best describes the issue.
+
+Steps:
+
+- Create a new issue.
+- Make a approriate title for the issue
+- Assign it to the developer.
+- Assign appropriate milestone and label for the merge request.
+- Submit the issue.
 
 ## Development
 
-### Scripts
+### Prerequisites
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint
-- `npm run preview` - Preview production build
+- Node.js 18+ or higher
+- npm 9+
+- Modern web browser
 
-### Project Structure
+### Environment Setup
 
-```
-src/
-├── components/     # React components
-├── hooks/         # Custom hooks
-├── types/         # TypeScript interfaces
-└── lib/           # Utilities
-```
+1. Install dependencies: `npm install`
+2. Start development server: `npm run dev`
+3. Run linting: `npm run lint`
+4. Build for production: `npm run build`
 
-### Code Standards
+### Code Style
 
-- TypeScript interfaces for all component props
+- Follow React and TypeScript best practices
+- Use TypeScript interfaces for all component props
 - Semantic HTML and accessibility best practices
 - Tailwind CSS for styling
 - ESLint for code quality
+- Write meaningful commit messages
 
 # Contributing
 
@@ -133,8 +188,20 @@ available at [http://contributor-covenant.org/version/1/4][version]
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
 
-## License
+# License
 
 Copyright (c) 2020-present James Allen Tadique
 
-Personal portfolio project. All rights reserved.
+This software are licensed as follows:
+
+- It is for exclusive use only for James Allen Tadique.
+- All of the files inside are confidential.
+- It is not intended for distribution and should not be sold.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
