@@ -19,21 +19,55 @@ Modern React portfolio built with TypeScript, Vite, and Tailwind CSS.
 - **Redux Toolkit** - State management
 - **React Router** - Client-side routing
 
+### Web Vue
+
+Modern Vue portfolio built with TypeScript, Vite, and PrimeVue.
+
+**Tech Stack:**
+
+- **Vue 3** - Latest Vue with Composition API
+- **TypeScript** - Type-safe development
+- **Vite 6** - Fast build tool and dev server
+- **PrimeVue 4** - Comprehensive UI component library
+- **Pinia** - Modern state management
+- **Vue Router 4** - Client-side routing
+- **FontAwesome** - Icon library
+- **Axios** - HTTP client
+
+### Web Next
+
+Modern Next.js portfolio built with TypeScript, Tailwind CSS, and server-side rendering.
+
+**Tech Stack:**
+
+- **Next.js 15** - Latest Next.js with App Router
+- **React 19** - Latest React with modern features
+- **TypeScript** - Type-safe development
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations and transitions
+- **Radix UI** - Accessible component primitives
+- **Lucide React** - Modern icon library
+- **NextJS TopLoader** - Page loading indicator
+
 ## Quick Start
 
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd web-react
+cd jallen
 
-# Install dependencies
+# Install all dependencies
 npm install
 
-# Start development server
-npm run dev
+# Start development servers
+npm run dev:react  # React version
+npm run dev:vue    # Vue version
+npm run dev:next   # Next.js version
 
 # Build for production
-npm run build
+npm run build:react
+npm run build:vue
+npm run build:next
 ```
 
 ## Contributors
