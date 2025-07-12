@@ -2,7 +2,7 @@ import type { Work, ProcessWork } from "../common/model";
 import { getServerData } from "./gateway";
 
 export const getWorks = async (): Promise<Work[]> => {
-  const data: Work[] = await getServerData("works");
+  const data: Work[] = await getServerData("work");
   return data;
 };
 
