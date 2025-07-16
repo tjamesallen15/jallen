@@ -17,6 +17,11 @@ All notable changes to this project will be documented in this file.
 - `[Projects]` Fixed color theme.
 - `[Resume]` Fixed color theme.
 - `[Footer]` Fixed color theme.
+- `[Layout]` Fixed layout component structure.
+- `[Pages]` Fixed page component implementations.
+- `[Components]` Updated component implementations and transitions.
+- `[Shared]` Fixed core base functionality and icon provider.
+- `[API]` Updated gateway configuration.
 
 # 1.1.0
 

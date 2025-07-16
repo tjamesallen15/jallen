@@ -14,6 +14,11 @@ All notable changes to this project will be documented in this file.
 
 - `[Dependencies]` Updated all dependencies to latest versions.
 - `[Build]` Improved build performance with latest tooling.
+- `[Header]` Fixed header component implementation.
+- `[Resume]` Fixed skills icon rendering and condition checks.
+- `[Footer]` Updated footer component structure.
+- `[Socials]` Fixed socials component implementation.
+- `[Main]` Updated main entry point with icon provider initialization.
 
 # 1.2.0
 
