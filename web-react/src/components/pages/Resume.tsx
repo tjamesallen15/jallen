@@ -218,7 +218,7 @@ const Resume = () => {
                   )}
                   <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4 xl:gap-[30px]">
                     {skills.map((item: Skills, index: number) => {
-                      if (item.icon !== undefined) {
+                      if (item.icon) {
                         return (
                           <li key={index}>
                             <TooltipProvider delayDuration={100}>

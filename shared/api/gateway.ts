@@ -1,4 +1,5 @@
 export const getServerPath = (path: string) => {
+  // return "";
   // return `http://localhost:8080/${path}`;
   return `https://tyrael.up.railway.app/${path}`;
 };

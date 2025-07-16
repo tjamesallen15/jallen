@@ -9,7 +9,9 @@ import Resume from "./components/pages/Resume";
 import Projects from "./components/pages/Projects";
 import StairTransition from "./components/transition/StairTransition";
 import PageTransition from "./components/transition/PageTransition";
+import { initializeIconProvider } from "../../shared/common/icon-react";
 
+initializeIconProvider();
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <StairTransition />

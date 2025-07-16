@@ -1,8 +1,11 @@
+"use client";
+
+import { Social } from "../../app/data/common/types";
 import { motion } from "framer-motion";
-import { getFooterSocials } from "../../../../shared/common/core-react";
+import { getFooterSocials } from "@/app/data/api/common";
 
 const Footer = () => {
-  const socialList = getFooterSocials();
+  const socialList: Social[] = getFooterSocials();
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -17,7 +20,7 @@ const Footer = () => {
       className="fixed w-full flex-row justify-between bg-sidebar bottom-0 p-4 hidden md:flex"
     >
       <span className="text-xs text-link">
-        Created using React &#169; Copyright 2020 of James Allen All Rights
+        Created using Next.js &#169; Copyright 2020 of James Allen All Rights
         Reserved.
       </span>
       <div className="flex flex-row gap-6 items-center">

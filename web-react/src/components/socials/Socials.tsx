@@ -1,5 +1,5 @@
 import React from "react";
-import { getSocials } from "../../../../shared/common/core-base";
+import { getSocials } from "../../../../shared/common/core-react";
 import type { Social } from "../../../../shared/common/model";
 
 type SocialsProps = {

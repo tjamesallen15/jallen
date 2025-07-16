@@ -1,10 +1,8 @@
 import type { Dashboard, Heading } from "./page";
-import type { NavigationItem, Social } from "./model";
+import type { NavigationItem } from "./model";
 
 type IconProvider = {
   getSkillIcon: (name: string) => React.ReactNode;
-  getSocials: () => Social[];
-  getFooterSocials: () => Social[];
 };
 
 let iconProvider: IconProvider | null = null;
@@ -67,13 +65,5 @@ export const getNavigationItems = (): NavigationItem[] => [
 ];
 
 export const getSkillIcon = (name: string) => {
-  return iconProvider?.getSkillIcon(name);
-};
-
-export const getSocials = (): Social[] => {
-  return iconProvider?.getSocials() || [];
-};
-
-export const getFooterSocials = (): Social[] => {
-  return iconProvider?.getFooterSocials() || [];
+  return iconProvider?.getSkillIcon(name) || null;
 };
