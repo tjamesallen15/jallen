@@ -67,3 +67,43 @@ export const getNavigationItems = (): NavigationItem[] => [
 export const getSkillIcon = (name: string) => {
   return iconProvider?.getSkillIcon(name) || null;
 };
+
+export const Process = {
+  Application: "application",
+  Work: "work",
+} as const;
+
+export const SaveDialog = {
+  Title: "Save Changes",
+  Description: "Your changes have been saved successfully.",
+  Button: "Close",
+} as const;
+
+export const NewDialog = {
+  Title: "New Changes",
+  Description: "Your changes have been added successfully.",
+  Button: "Close",
+} as const;
+
+export const DeleteDialog = {
+  Title: "Save Changes",
+  Description: "Your changes have been saved successfully.",
+  Button: "Close",
+} as const;
+
+export const NewApplication = {
+  Title: "New Application",
+  Description: "New Description",
+  Category: "New Category",
+  Tech: "New Technology",
+  Repository: "New Repository",
+  Site: "New Site",
+} as const;
+
+export const NewWork = {
+  Name: "New Work",
+  Sub: "New Sub",
+  Technology: "New Technology",
+  Company: "New Company",
+  Description: "New Description",
+} as const;

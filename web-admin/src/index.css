@@ -1,0 +1,287 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource/rubik";
+@import "@fontsource/rubik/300.css";
+@import "@fontsource/rubik/400.css";
+@import "@fontsource/rubik/500.css";
+@import "@fontsource/rubik/600.css";
+@import "@fontsource/rubik/700.css";
+@import "@fontsource/rubik/800.css";
+@import "@fontsource/rubik/900.css";
+@import "@fontsource/karla";
+@import "@fontsource/karla/200.css";
+@import "@fontsource/karla/300.css";
+@import "@fontsource/karla/400.css";
+@import "@fontsource/karla/500.css";
+@import "@fontsource/karla/600.css";
+@import "@fontsource/karla/700.css";
+@import "@fontsource/karla/800.css";
+
+/* @custom-variant dark (&:is(.dark *)); */
+
+:root {
+  --ja-white: #ffffff;
+  --ja-lightgray: #e0e0e1;
+  --ja-darkgray: #1c1c22;
+  --ja-lightblue: #003876;
+  --ja-darkblue: #051b34;
+  --ja-active: #c5c5c9;
+  --ja-highlight: #55a3f3;
+  --ja-border: #051b34;
+  --ja-border-accent: #55a3f3;
+
+  font-family: Rubik;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@theme inline {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+
+  --font-primary: Rubik;
+  --font-karla: Karla;
+  --font-rubik: Rubik;
+  --color-ja-white: var(--ja-white);
+  --color-ja-lightgray: var(--ja-lightgray);
+  --color-ja-darkgray: var(--ja-darkgray);
+  --color-ja-lightblue: var(--ja-lightblue);
+  --color-ja-darkblue: var(--ja-darkblue);
+  --color-ja-active: var(--ja-active);
+  --color-ja-highlight: var(--ja-highlight);
+  --color-border: var(--ja-border);
+  --color-border-accent: var(--ja-border-accent);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  /* --color-border: var(--border); */
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply font-primary bg-ja-lightgray text-ja-darkgray;
+  }
+
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  input,
+  textarea {
+    @apply border-solid border-gray-500 border-2;
+  }
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  background-color: var(--ja-white);
+  color: var(--ja-darkgray);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Karla;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  color: var(--ja-white);
+  background-color: var(--ja-lightblue);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto var(--ja-white);
+}
+
+button[disabled] {
+  background-color: var(--ja-white);
+  color: var(--ja-lightgray);
+}
+
+/* Core styles/functionality */
+.tab {
+  position: relative;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.tab-content div {
+  padding: 16px;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 1000px;
+}
+
+/* Visual styles */
+.accordion {
+  color: var(--theme);
+  overflow: hidden;
+}
+
+.tab-label,
+.tab-close {
+  display: flex;
+  color: black;
+  background: var(--theme);
+  cursor: pointer;
+}
+
+.tab input:checked ~ .tab-label {
+  background-color: var(--ja-active);
+  color: var(--ja-darkgray);
+}
+
+.tab-label {
+  justify-content: space-between;
+  background-color: var(--ja-darkblue);
+  color: var(--ja-white);
+  padding: 1rem;
+}
+
+.tab-label:hover {
+  background-color: var(--ja-highlight);
+  color: var(--ja-darkgray);
+}
+
+.tab-content p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.tab-close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.accordion--radio {
+  --theme: var(--secondary);
+}

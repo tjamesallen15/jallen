@@ -24,17 +24,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": [
-    "src",
-    "../shared/api/about.ts",
-    "../shared/api/experience.ts",
-    "../shared/api/information.ts",
-    "../shared/api/skills.ts",
-    "../shared/api/work.ts",
-    "../shared/common/core.tsx",
-    "../web-admin/src/assets/data"
-  ]
+  "include": ["src"]
 }

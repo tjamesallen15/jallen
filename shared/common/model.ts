@@ -66,3 +66,12 @@ export interface SkillIcon {
   name: string;
   icon: React.ReactNode;
 }
+
+export interface Credentials {
+  username: string;
+  password: string;
+}
+
+export interface Enigma {
+  message: string;
+}
